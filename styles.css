@@ -1,127 +1,48 @@
-/* Global Styles */
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background: linear-gradient(to right, #2c3e50, #4ca1af);
-    color: white;
-    scroll-behavior: smooth;
-    font-size: 18px; /* Base font size for readability */
-}
-
-h1 {
-    font-size: 36px;
-}
-
-h2 {
-    font-size: 28px;
-}
-
-p {
-    font-size: 18px;
-}
-
-/* Header Styling */
-header {
-    background: white;
-    padding: 10px 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-header h2 {
-    color: #2c3e50;
-}
-
-header span {
-    color: #4ca1af;
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-    margin: 0;
-    padding: 0;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: #2c3e50;
-    font-weight: bold;
-}
-
-nav ul li a:hover {
-    color: #4ca1af;
-}
-
-/* Section Visibility Control */
-section {
-    display: none; /* Hide all sections by default */
-}
-
-section.active {
-    display: block; /* Show active section */
-}
-
-/* Home and About Section Styling */
-.home, .about {
-    text-align: center;
-    padding: 100px 20px;
-}
-
-/* Social Media Icons */
-.social-icons a img {
-    width: 30px;
-    margin: 10px;
-    background: white;
-    border-radius: 50%;
-    padding: 5px;
-    transition: transform 0.3s;
-}
-
-.social-icons a img:hover {
-    transform: scale(1.1);
-}
-
 /* Profile Photo Styling */
 .profile-photo {
     width: 180px;
     height: 180px;
     border-radius: 50%;
     object-fit: cover;
-    margin-bottom: 20px;
+    margin: 0 auto 20px auto;  /* Centers the image */
+    display: block;
     border: 4px solid white;
     box-shadow: 0 4px 8px rgba(0,0,0,0.3);
 }
 
 /* About Section Layout */
-.about-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-}
-
-.about-text {
+.about-card {
     max-width: 800px;
-    text-align: center;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center; /* Center all the text */
 }
 
-/* Responsive Design for About Section */
-@media (min-width: 768px) {
-    .about-container {
-        flex-direction: row; /* Photo and text side by side */
-        justify-content: center;
-        gap: 40px;
-    }
-
-    .about-text {
-        text-align: left;
-    }
+.about-card h2 {
+    margin-bottom: 20px;
+    font-size: 32px;
 }
 
-/* Keep About Section Text Readable on Gradient */
-.about h2, .about p {
-    color: white;
+.about-card p {
+    font-size: 18px;
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+/* Contact Info Styling */
+.contact-info {
+    margin-top: 20px;
+}
+
+.contact-info p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 18px;
+}
+
+.contact-info .icon {
+    width: 20px; /* Smaller icons */
+    height: 20px;
 }
