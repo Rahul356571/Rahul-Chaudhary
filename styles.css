@@ -1,7 +1,7 @@
 /* Global Styles */
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     background: linear-gradient(to right, #2c3e50, #4ca1af);
     color: white;
     scroll-behavior: smooth;
@@ -14,6 +14,7 @@ h1 {
 
 h2 {
     font-size: 32px;
+    margin-bottom: 20px;
 }
 
 p {
@@ -56,22 +57,21 @@ nav ul li a:hover {
     color: #4ca1af;
 }
 
-/* Section Visibility Control */
+/* Section Visibility */
 section {
     display: none;
 }
 
 section.active {
     display: block;
+    padding: 80px 20px;
 }
 
-/* Home and About Section Styling */
-.home, .about {
+/* Home & About Sections */
+.home, .about, .education {
     text-align: center;
-    padding: 100px 20px;
 }
 
-/* Social Media Icons */
 .social-icons a img {
     width: 30px;
     margin: 10px;
@@ -85,7 +85,7 @@ section.active {
     transform: scale(1.1);
 }
 
-/* Profile Photo Styling */
+/* Profile Photo */
 .profile-photo {
     width: 150px;
     height: 150px;
@@ -97,23 +97,14 @@ section.active {
     box-shadow: 0 4px 8px rgba(0,0,0,0.3);
 }
 
-/* About Section Layout */
+/* About Section */
 .about-card {
-    max-width: 800px;
+    max-width: 900px;
     margin: 0 auto;
     padding: 20px;
     text-align: center;
 }
 
-.about-card h2 {
-    margin-bottom: 20px;
-}
-
-.about-card p {
-    margin-bottom: 15px;
-}
-
-/* Contact Info Styling */
 .contact-info {
     margin-top: 20px;
 }
@@ -129,4 +120,24 @@ section.active {
 .contact-info .icon {
     width: 16px;
     height: 16px;
+}
+
+/* Education Section */
+.education-card {
+    max-width: 800px;
+    margin: 0 auto;
+    display: grid;
+    gap: 20px;
+}
+
+.education-item {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.education-item h3 {
+    color: #f1c40f;
+    margin-bottom: 10px;
 }
