@@ -5,6 +5,19 @@ body {
     background: linear-gradient(to right, #2c3e50, #4ca1af);
     color: white;
     scroll-behavior: smooth;
+    font-size: 18px; /* Base font size for readability */
+}
+
+h1 {
+    font-size: 36px;
+}
+
+h2 {
+    font-size: 28px;
+}
+
+p {
+    font-size: 18px;
 }
 
 /* Header Styling */
@@ -98,7 +111,7 @@ section.active {
 /* Responsive Design for About Section */
 @media (min-width: 768px) {
     .about-container {
-        flex-direction: row;
+        flex-direction: row; /* Photo and text side by side */
         justify-content: center;
         gap: 40px;
     }
