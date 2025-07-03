@@ -1,3 +1,4 @@
+/* Global Styles */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -6,6 +7,7 @@ body {
     scroll-behavior: smooth;
 }
 
+/* Header Styling */
 header {
     background: white;
     padding: 10px 20px;
@@ -40,21 +42,22 @@ nav ul li a:hover {
     color: #4ca1af;
 }
 
+/* Section Visibility Control */
+section {
+    display: none; /* Hide all sections by default */
+}
+
+section.active {
+    display: block; /* Show active section */
+}
+
+/* Home and About Section Styling */
 .home, .about {
     text-align: center;
     padding: 100px 20px;
 }
 
-/* Hide About section by default */
-#about {
-    display: none;
-}
-
-/* About section text color to remain readable on gradient */
-.about h2, .about p {
-    color: white;
-}
-
+/* Social Media Icons */
 .social-icons a img {
     width: 30px;
     margin: 10px;
@@ -68,6 +71,7 @@ nav ul li a:hover {
     transform: scale(1.1);
 }
 
+/* Profile Photo Styling */
 .profile-photo {
     width: 180px;
     height: 180px;
@@ -78,6 +82,7 @@ nav ul li a:hover {
     box-shadow: 0 4px 8px rgba(0,0,0,0.3);
 }
 
+/* About Section Layout */
 .about-container {
     display: flex;
     flex-direction: column;
@@ -90,6 +95,7 @@ nav ul li a:hover {
     text-align: center;
 }
 
+/* Responsive Design for About Section */
 @media (min-width: 768px) {
     .about-container {
         flex-direction: row;
@@ -100,4 +106,9 @@ nav ul li a:hover {
     .about-text {
         text-align: left;
     }
+}
+
+/* Keep About Section Text Readable on Gradient */
+.about h2, .about p {
+    color: white;
 }
