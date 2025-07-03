@@ -122,22 +122,37 @@ section.active {
     height: 16px;
 }
 
-/* Education Section */
+/* Education Section Styling */
 .education-card {
-    max-width: 800px;
+    max-width: 900px;
     margin: 0 auto;
-    display: grid;
-    gap: 20px;
-}
-
-.education-item {
-    background: rgba(255, 255, 255, 0.1);
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    padding: 30px 20px;
 }
 
 .education-item h3 {
-    color: #f1c40f;
+    color: #3498db; /* Blue heading */
     margin-bottom: 10px;
 }
+
+.education-item .college {
+    color: #f39c12; /* Orange college name */
+    font-weight: bold;
+}
+
+.education-item .cgpa {
+    color: #2ecc71; /* Green CGPA/Percentage */
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* Optional Hover Effect for CGPA and College Name */
+.education-item .college:hover {
+    color: #f1c40f;
+    cursor: default;
+}
+
+.education-item .cgpa:hover {
+    color: #27ae60;
+    cursor: default;
+}
+
