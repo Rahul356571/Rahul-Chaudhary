@@ -40,9 +40,19 @@ nav ul li a:hover {
     color: #4ca1af;
 }
 
-.home {
+.home, .about {
     text-align: center;
     padding: 100px 20px;
+}
+
+/* Hide About section by default */
+#about {
+    display: none;
+}
+
+/* About section text color to remain readable on gradient */
+.about h2, .about p {
+    color: white;
 }
 
 .social-icons a img {
@@ -56,23 +66,4 @@ nav ul li a:hover {
 
 .social-icons a img:hover {
     transform: scale(1.1);
-}
-
-#about {
-    background-color: white;
-    color: #2c3e50;
-    padding: 60px 20px;
-    text-align: center;
-}
-
-#about h2 {
-    font-size: 2em;
-    margin-bottom: 20px;
-}
-
-#about p {
-    max-width: 800px;
-    margin: 0 auto 20px;
-    line-height: 1.6;
-    font-size: 1.1em;
 }

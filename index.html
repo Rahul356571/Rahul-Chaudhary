@@ -11,8 +11,8 @@
         <nav>
             <h2>Rahul <span>Verma</span></h2>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#about">About</a></li>
+                <li><a href="#" onclick="showSection('home')">Home</a></li>
+                <li><a href="#" onclick="showSection('about')">About</a></li>
                 <li><a href="#">Education</a></li>
                 <li><a href="#">Experience</a></li>
                 <li><a href="#">Projects</a></li>
@@ -20,7 +20,7 @@
         </nav>
     </header>
 
-    <section class="home">
+    <section id="home" class="home">
         <h1>Hi, I'm Rahul Verma<span class="typing"></span></h1>
         <h2>M. Pharm Candidate | Pharmaceutical Chemistry</h2>
         <p>Specializing in Pharmaceutical Chemistry at Jadavpur University, Kolkata</p>
@@ -32,7 +32,7 @@
     </section>
 
     <!-- About Section -->
-    <section id="about">
+    <section id="about" class="about">
         <h2>About Me</h2>
         <p>Hello, I am <strong>Rahul Verma</strong>, currently pursuing <strong>M. Pharm in Pharmaceutical Chemistry</strong> at <strong>Jadavpur University, Kolkata</strong>.</p>
 
@@ -43,6 +43,10 @@
         <p>In addition to my technical skills, I am passionate about <strong>learning, teamwork, and continuous self-improvement</strong>. I also enjoy exploring new places, connecting with people, and improving my English communication skills.</p>
 
         <p><strong>Let’s connect and grow together!</strong></p>
+
+        <p><strong>Contact:</strong></p>
+        <p>📞 7408254633</p>
+        <p>📧 bpharma6306@mail.com</p>
     </section>
 
     <script src="script.js"></script>
