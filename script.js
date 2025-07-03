@@ -9,10 +9,9 @@ function typeEffect() {
 
 setInterval(typeEffect, 200);
 
-// Show/Hide Sections
 function showSection(sectionId) {
-    document.getElementById('home').style.display = 'none';
-    document.getElementById('about').style.display = 'none';
-
-    document.getElementById(sectionId).style.display = 'block';
+    document.querySelectorAll('section').forEach(section => {
+        section.classList.remove('active');
+    });
+    document.getElementById(sectionId).classList.add('active');
 }
