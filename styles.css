@@ -1,121 +1,99 @@
-/* Reset styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
+/* styles.css */
 
 body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     display: flex;
-    min-height: 100vh;
-    background-color: #e6f0f3; /* Light modern background */
+    height: 100vh;
+    background-color: #f0f2f5;
 }
 
-/* Sidebar Styling */
 .sidebar {
-    width: 320px; /* Increased sidebar width */
-    background-color: #1c1c1c; /* Darker black */
+    width: 300px;
+    background-color: #1f1f1f;
     color: white;
+    padding: 30px 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 30px 15px;
-    position: fixed; /* Fixed sidebar from top to bottom */
-    height: 100vh; /* Full screen height */
-    overflow-y: auto;
 }
 
-.sidebar .profile-photo {
-    width: 160px;
-    height: 160px;
+.profile-photo {
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
     object-fit: cover;
-    border: 4px solid white;
-    margin-bottom: 15px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+    margin-bottom: 20px;
 }
 
 .sidebar h2 {
+    margin: 10px 0;
     font-size: 24px;
-    margin-bottom: 10px;
-    text-align: center;
 }
 
 .sidebar p {
-    font-size: 15px;
+    font-size: 14px;
     margin-bottom: 20px;
-    color: #bbbbbb;
     text-align: center;
 }
 
-.sidebar .social-icons a img {
+.social-icons a img {
     width: 30px;
-    margin: 0 8px;
-    transition: transform 0.3s ease;
+    margin: 0 10px 20px 10px;
+    transition: transform 0.3s;
 }
 
-.sidebar .social-icons a img:hover {
+.social-icons a img:hover {
     transform: scale(1.2);
 }
 
 .sidebar nav ul {
     list-style: none;
+    padding: 0;
     width: 100%;
-    margin-top: 40px;
 }
 
 .sidebar nav ul li {
-    margin: 18px 0;
+    margin: 20px 0;
 }
 
 .sidebar nav ul li a {
-    text-decoration: none;
     color: white;
-    font-size: 20px;
-    padding: 12px 25px;
-    display: block;
-    border-radius: 10px;
-    transition: background-color 0.3s;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
 }
 
 .sidebar nav ul li a:hover {
-    background-color: #4CAF50;
+    color: #00bcd4;
 }
 
-/* Main Content Styling */
 .main-content {
-    margin-left: 320px; /* Space for the fixed sidebar */
     flex: 1;
-    padding: 50px;
-    background-color: #f5f7fa; /* New soft modern background */
-    min-height: 100vh;
+    padding: 40px;
+    background-color: #e8eaf6;
+    overflow-y: auto;
 }
 
 .main-content h2 {
     font-size: 32px;
-    margin-bottom: 25px;
+    margin-bottom: 30px;
 }
 
 .education-card {
-    background-color: #ffffff; /* Card color (you can change to #f0f0f0 or any pastel color) */
-    padding: 25px;
-    margin-bottom: 25px;
-    border-radius: 15px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-    transition: transform 0.3s;
-}
-
-.education-card:hover {
-    transform: translateY(-5px);
+    background-color: #ffffff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .education-card h3 {
-    margin-bottom: 10px;
-    font-size: 22px;
+    margin: 0 0 10px 0;
+    font-size: 20px;
 }
 
 .education-card p {
-    font-size: 17px;
-    color: #333;
+    margin: 0;
+    font-size: 16px;
 }
