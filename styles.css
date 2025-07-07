@@ -140,3 +140,32 @@ body {
     width: 20px;
     margin-right: 10px;
 }
+/* Experience and Project Containers */
+.experience-container, .project-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Experience and Project Cards */
+.experience-card, .project-card {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Titles inside the Cards */
+.experience-card h3, .project-card h3 {
+    margin: 0 0 10px 0;
+    font-size: 22px;
+    color: #1f1f1f;
+}
+
+/* Descriptions inside the Cards */
+.experience-card p, .project-card p {
+    margin: 0;
+    font-size: 16px;
+    color: #333333;
+}
+
